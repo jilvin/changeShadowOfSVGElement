@@ -25,9 +25,26 @@ function changeShadowOfSVGElement(x1, y1, z1, z2, element1Identifier, element2Id
       //Calculation of Shadow Radius.
       var radiusShadow = (radiusObject * ((z2+z1)/z1));
 
-      // Radius of Shadow changed here.
+      //Radius of Shadow changed here.
       document.getElementById(element2Identifier).setAttribute("r", radiusShadow);
 
+      //Get x coordinate of the object.
+      var xObject = document.getElementById(element1Identifier).getAttribute("cx");
+
+      //Calculate x coordinate of the shadow.
+      var xShadow = (xObject-(x1-xObject));
+
+      //x coordinate of shadow set here.
+      document.getElementById(element2Identifier).setAttribute("cx", xShadow);
+
+      //Get y coordinate of the object.
+      var yObject = document.getElementById(element1Identifier).getAttribute("cy");
+
+      //Calculate x coordinate of the shadow.
+      var yShadow = (yObject-(y1-yObject));
+
+      //x coordinate of shadow set here.
+      document.getElementById(element2Identifier).setAttribute("cy", yShadow);
     }
     else
     {
