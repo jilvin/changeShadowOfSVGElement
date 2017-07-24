@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-
   <meta charset="utf-8">
 
   <title>Changing Shadows</title>
@@ -13,22 +12,19 @@
   <!--[if lt IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
-
 </head>
 <body>
-  <svg width="230" height="120"
-  xmlns="http://www.w3.org/2000/svg"
-  xmlns:xlink="http://www.w3.org/1999/xlink">
-
-  <filter id="blurMe" x="-10" y="-10" width="20" height="20">
-    <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
-  </filter>
-
-  <circle cx="30" cy="30" r="20" fill="grey" filter="url(#blurMe)" />
-  <circle cx="30"  cy="30" r="20" fill="yellow" />
-
-</svg>
-<script src="js/changingShadow.js"></script>
-
+  <svg width="230" height="120" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <filter id="blurMe" x="-10" y="-10" width="20" height="20">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+    </filter>
+    <circle id="shadow" cx="30" cy="30" r="20" fill="grey" filter="url(#blurMe)" />
+    <circle id="henosis" cx="30"  cy="30" r="20" fill="yellow" />
+  </svg>
+  <script src="js/changingShadowSVGElements.js"></script>
+  <script>
+    changeShadowOfSVGElement(0, 0, 0.2, 0.005, "henosis", "shadow");
+    // changeShadowOfSVGElement();
+  </script>
 </body>
 </html>
