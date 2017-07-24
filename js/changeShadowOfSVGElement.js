@@ -1,6 +1,8 @@
-//changeShadowOfSVGElement(int x1, int y1, int z1, int x2, int y2, int z2, string elementType, string element1Identifier, string element2Identifier);
+//changeShadowOfSVGElement(int x1, int y1, int z1, int z2, string element1Identifier, string element2Identifier);
 //x1, y1, z1 - coordinates of the light source.
 //z2 - plane of the screen.
+//element1Identifier - ID of the first SVG element(object).
+//element2Identifier - ID of the second SVG element(shadow).
 
 function changeShadowOfSVGElement(x1, y1, z1, z2, element1Identifier, element2Identifier)
 // function changeShadowOfSVGElement()
