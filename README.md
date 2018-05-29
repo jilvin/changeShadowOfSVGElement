@@ -1,4 +1,7 @@
 # changeShadowOfSVGElement
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cbeffc458f55466582c5193ddd16c63b)](https://app.codacy.com/app/jilvin/changeShadowOfSVGElement?utm_source=github.com&utm_medium=referral&utm_content=jilvin/changeShadowOfSVGElement&utm_campaign=badger)
+
 Change shadow of an SVG element dynamically depending on the set perspective point. 
 
 ## Usage
